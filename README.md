@@ -34,10 +34,10 @@ checkpoint at start-up (see [Limitations](#limits-and-limitations)).
 
 | Member | Affiliation |
 |---|---|
-| Hüseyin Umut Işık | Middle East Technical University (METU), Ankara, Türkiye; Boston Children's Hospital / Harvard Medical School, Boston, USA |
-| Mehmet Alp Özaydın | Middle East Technical University (METU), Ankara, Türkiye |
-| Sila Kurugol | Boston Children's Hospital / Harvard Medical School, Boston, USA |
-| Şeyda Ertekin | Middle East Technical University (METU), Ankara, Türkiye |
+| Hüseyin Umut Işık | Department of Computer Engineering, Middle East Technical University (METU), Ankara, Türkiye |
+| Mehmet Alp Özaydın | Department of Computer Engineering, Middle East Technical University (METU), Ankara, Türkiye |
+| Sila Kurugol | Department of Computer Engineering, Middle East Technical University (METU), Ankara, Türkiye |
+| Şeyda Ertekin | Department of Computer Engineering, Middle East Technical University (METU), Ankara, Türkiye |
 
 ## Method
 
