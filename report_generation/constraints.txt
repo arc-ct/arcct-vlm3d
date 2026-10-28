@@ -1,0 +1,5 @@
+# Lock the torch/torchvision pair so no dependency (e.g. monai) can silently
+# pull a different torch and orphan torchvision ("operator torchvision::nms
+# does not exist"). Must match the versions installed in the Dockerfile.
+torch==2.4.1
+torchvision==0.19.1

@@ -1,0 +1,15 @@
+# torch==2.4.1 / torchvision==0.19.1 (cu121) are installed first, see README.
+transformers==4.51.3
+tokenizers
+huggingface_hub
+nibabel
+monai==1.4.0
+scikit-learn
+numpy<2
+pandas
+einops
+beartype
+ftfy
+regex
+sentencepiece
+tqdm

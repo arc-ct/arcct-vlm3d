@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the ARC-CT paper below."
+title: "arcct-vlm3d: VLM3D 2026 CT challenge submissions (team metu-qedi)"
+repository-code: "https://github.com/arc-ct/arcct-vlm3d"
+license: MIT
+authors:
+  - family-names: "Isik"
+    given-names: "Huseyin Umut"
+  - family-names: "Ozaydin"
+    given-names: "Mehmet Alp"
+  - family-names: "Kurugol"
+    given-names: "Sila"
+  - family-names: "Ertekin"
+    given-names: "Seyda"
+preferred-citation:
+  type: conference-paper
+  title: "ARC-CT: Anatomy-Routed Contrastive Vision-Language Learning for 3D Chest CT"
+  year: 2026
+  collection-title: "The Third International Workshop on Thoracic Image Analysis at MICCAI 2026"
+  url: "https://openreview.net/forum?id=t6mhjZ4R70"
+  authors:
+    - family-names: "Isik"
+      given-names: "Huseyin Umut"
+    - family-names: "Ozaydin"
+      given-names: "Mehmet Alp"
+    - family-names: "Kurugol"
+      given-names: "Sila"
+    - family-names: "Ertekin"
+      given-names: "Seyda"

@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pt
+*.zip
+*.npz
+runs/
+data/
+ckpt/
+weights_*/
+.cache/

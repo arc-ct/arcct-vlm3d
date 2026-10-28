@@ -1,0 +1,15 @@
+# torch / torchvision are installed separately (cu121) in the Dockerfile.
+transformers==4.51.3
+tokenizers
+huggingface_hub
+nibabel
+monai==1.4.0
+scikit-learn
+numpy<2
+pandas
+einops
+beartype
+ftfy
+regex
+sentencepiece
+tqdm

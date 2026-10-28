@@ -1,0 +1,74 @@
+{
+ "Medical material": {
+  "pos": "A central venous catheter is observed.",
+  "neg": "No findings consistent with pneumonia were detected."
+ },
+ "Arterial wall calcification": {
+  "pos": "Atherosclerotic changes in the aorta and coronary arteries.",
+  "neg": ""
+ },
+ "Cardiomegaly": {
+  "pos": "Heart size increased.",
+  "neg": "Heart size and contours are normal."
+ },
+ "Pericardial effusion": {
+  "pos": "There is minimal pericardial effusion.",
+  "neg": "Pericardial effusion-thickening was not observed."
+ },
+ "Coronary artery wall calcification": {
+  "pos": "Calcific atheroma plaques are observed in the aorta and coronary arteries.",
+  "neg": ""
+ },
+ "Hiatal hernia": {
+  "pos": "Hiatal hernia.",
+  "neg": ""
+ },
+ "Lymphadenopathy": {
+  "pos": "There are short lymph nodes less than 1 cm in diameter in the mediastinum and hilar regions.",
+  "neg": "No enlarged lymph nodes in prevascular, pre-paratracheal, subcarinal or bilateral hilar-axillary pathological dimensions were detected."
+ },
+ "Emphysema": {
+  "pos": "There are minimal emphysematous changes in both lungs.",
+  "neg": ""
+ },
+ "Atelectasis": {
+  "pos": "Atelectasis in both lungs.",
+  "neg": "Thoracic CT examination within normal limits except for a millimetric nonspecific parenchymal nodule accompanied by linear fibroatelectasis sequelae change in the middle lobe of the right lung."
+ },
+ "Lung nodule": {
+  "pos": "There are millimetric nonspecific nodules in both lungs.",
+  "neg": "When examined in the lung parenchyma window; Aeration of both lung parenchyma is normal and no nodular or infiltrative lesion is detected in the lung parenchyma."
+ },
+ "Lung opacity": {
+  "pos": "In the evaluation of both lung parenchyma; Patchy, peripheral-subpleural, ground glass density, crazy paving appearances and consolidations were observed in both lungs.",
+  "neg": "When examined in the lung parenchyma window; Nodular ground glass densities observed in the previous examination in the paracardiac area in the left lung lower lobe anteromedial are not observed in the current examination, and mild atelectatic changes are observed at this level."
+ },
+ "Pulmonary fibrotic sequela": {
+  "pos": "Sequelae changes in both lungs.",
+  "neg": "Atelectasis changes in both lungs, stable pleural thickness increases (sequelae), bronchial wall thickness increases in segment bronchi, pulmonary edema and no signs of infection were observed."
+ },
+ "Pleural effusion": {
+  "pos": "Bilateral pleural effusion.",
+  "neg": "Pleural effusion-thickening was not detected."
+ },
+ "Mosaic attenuation pattern": {
+  "pos": "Mosaic attenuation pattern in both lungs (small airway disease?, small vessel disease?).",
+  "neg": ""
+ },
+ "Peribronchial thickening": {
+  "pos": "Bilateral peribronchial thickenings were observed.",
+  "neg": "Atelectasis changes in both lungs, stable pleural thickness increases (sequelae), bronchial wall thickness increases in segment bronchi, pulmonary edema and no signs of infection were observed."
+ },
+ "Consolidation": {
+  "pos": "In the evaluation of both lung parenchyma; Patchy, peripheral-subpleural, ground glass density, crazy paving appearances and consolidations were observed in both lungs.",
+  "neg": "No pneumonic infiltration or consolidation area was detected in the lung parenchyma."
+ },
+ "Bronchiectasis": {
+  "pos": "There is minimal bronchiectasis in the central parts of both lungs.",
+  "neg": "Apart from this, no mass lesion, active infiltration and bronchiectasis, with distinguishable borders, were detected in both lungs."
+ },
+ "Interlobular septal thickening": {
+  "pos": "There are thickenings in the interlobular septa.",
+  "neg": ""
+ }
+}
