@@ -116,13 +116,31 @@ competitive with generative models while the clinical metrics follow the classif
 
 | Dataset | Use | Access |
 |---|---|---|
-| [CT-RATE](https://huggingface.co/datasets/ibrahimhamamci/CT-RATE) (challenge-provided) | training (`train`, 47k volumes), validation and model selection (`valid`, 3,002 volumes with labels), report gallery (`train_reports.csv`, `train_predicted_labels.csv`) | Hugging Face, gated (accept the terms) |
-| [RAD-ChestCT](https://zenodo.org/records/6406114) (public) | extra training data, **`imgtrain` only** (2,286 volumes), for two classification members; `imgvalid` + `imgtest` (1,344) held out as the external validation set | Zenodo |
+| [CT-RATE](https://huggingface.co/datasets/ibrahimhamamci/CT-RATE) (challenge-provided) | both tasks: training (`train`, 47k volumes), validation and model selection (`valid`, 3,002 volumes with labels); report generation: retrieval gallery (`train_reports.csv`, 46,397 reports, and `train_predicted_labels.csv`, used unmodified) | Hugging Face, gated (accept the terms); CC BY-NC-SA 4.0 |
+| [RAD-ChestCT](https://zenodo.org/records/6406114) (additional public data) | classification only: extra training data, **`imgtrain` only** (2,286 volumes, oversampled 3×), for two of the six ensemble members; `imgvalid` + `imgtest` (1,344) held out and used only as the external validation set. Not used for report generation | Zenodo, under the dataset's own data-use terms |
 
-No private or synthetic data were used. The labels are the ones released with each
-dataset: CT-RATE's report-derived labels, and RAD-ChestCT's abnormality-by-location
-labels mapped onto the 18 CT-RATE classes by
-[`training/build_radchest_labels.py`](training/build_radchest_labels.py).
+**Labels.** We use the labels released with each dataset: CT-RATE's report-derived
+labels, unmodified, and RAD-ChestCT's abnormality-by-location labels, mapped
+deterministically onto the 18 CT-RATE classes by
+[`training/build_radchest_labels.py`](training/build_radchest_labels.py). Classes with no
+RAD-ChestCT equivalent (e.g. hiatal hernia) are left unlabelled and masked out of the loss.
+
+**Derived resources.** [`report_generation/sentence_bank.json`](report_generation/sentence_bank.json)
+holds one canonical sentence per finding, mined from CT-RATE training reports. The
+report-generation edit step uses it.
+
+**Pretrained models.** We use the public torchvision Kinetics-400 weights for `r3d_18`,
+`mc3_18` and `r2plus1d_18`. The report-generation container also loads
+`microsoft/BiomedVLP-CXR-BERT-specialized` and our ARC-CT checkpoint (trained on
+CT-RATE) at start-up, but neither affects its predictions.
+
+**Generated, private and synthetic data.** None: no synthetic images, no pseudo-labels,
+and no private or institutional data.
+
+**Access.** Our code and weights are public: this repository and
+[huggingface.co/arc-ct/arcct-vlm3d](https://huggingface.co/arc-ct/arcct-vlm3d). The
+weights are for non-commercial research use. We do not redistribute CT-RATE or
+RAD-ChestCT; obtain them from their original sources under their own terms.
 
 **Preprocessing for training.** Use `tools/prepare_data.py` from
 [arc-ct/arc-ct](https://github.com/arc-ct/arc-ct#data) to convert CT-RATE NIfTI files
