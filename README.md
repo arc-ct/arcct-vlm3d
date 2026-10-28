@@ -266,7 +266,7 @@ These were checked against the environment of the scored images.
 
 | | Classification | Report generation |
 |---|---|---|
-| Leaderboard entry | 2026-08-17, "Stage-1 8-member ensemble with per-class quantile calibration" | `fb3b4a42-8269-4bf7-aa21-1f9fbf363699` (2026-08-14) |
+| Leaderboard entry | `0ecf5051` (2026-08-17) | `fb3b4a42-8269-4bf7-aa21-1f9fbf363699` (2026-08-14) |
 | Container | [`classification/Dockerfile`](classification/Dockerfile) | [`report_generation/Dockerfile`](report_generation/Dockerfile) (`RG_MODE=hybrid`) |
 | Members | `STAGE1_MODELS` (8 slots, 6 files) | `STAGE1_MODELS` (4 files) |
 | Calibration | `RAC_CAL_KVEC` per class (CT-RATE validation priors) | `RAC_CAL_K=1.25` |
